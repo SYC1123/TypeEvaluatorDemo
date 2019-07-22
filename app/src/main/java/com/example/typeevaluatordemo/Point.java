@@ -3,13 +3,17 @@ package com.example.typeevaluatordemo;
 public class Point {
     private float x;
     private float y;
-    public Point(float x,float y){
-        this.x=x;
-        this.y=y;
+    private static int speed_x = 30;
+    private static int speed_y = 30;
+
+    public Point(float x, float y) {
+        this.x = x;
+        this.y = y;
     }
-    public Point(Point p){
-        this.x=p.x;
-        this.y=p.y;
+
+    public Point(Point p) {
+        this.x = p.x;
+        this.y = p.y;
     }
 
     public float getX() {
